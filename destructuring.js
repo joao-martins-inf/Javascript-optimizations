@@ -23,6 +23,12 @@ const [elem1, ...rest] = arr3;
 console.log(elem1); // arrow
 console.log(rest) // [1, 'bacon']
 
+const week = ['mon','tue','wed','thur','fri'];
+const weekend = ['sat','sun'];
+console.log([...week, ...weekend]); // ['mon','tue','wed','thur','fri','sat','sun']
+week.push(...weekend);
+console.log(week); // ['mon','tue','wed','thur','fri','sat','sun']
+
 
 console.log("\nDefault value:")
 //default value---> use '=' so set a default
