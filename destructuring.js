@@ -54,5 +54,16 @@ console.log(pepper) // 20
 console.log(banana) // 2
 console.log(shroom) // 1
 
+//swap with destructuring
+let a = 'foo';
+let b = 'bar';
 
+[a,b] = [b,a];
 
+console.log(a,b);
+
+const example = [{"teste": 123}, {"teste": 124}];
+const teste = example.map(item => item['teste']);
+
+console.log(teste);
+console.log([...example])
